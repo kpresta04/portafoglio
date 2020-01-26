@@ -1,7 +1,7 @@
 /* css variables */
 :root {
   --primary: #ffc636;
-  --secondary: #0a0b5b;
+  --secondary: #170325;
 }
 
 /* reset  */
@@ -108,4 +108,9 @@ h4 {
   body {
     font-size: 20px;
   }
+}
+
+.comet {
+  height: 134px;
+  width: 164px;
 }
