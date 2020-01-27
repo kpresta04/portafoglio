@@ -27,12 +27,11 @@ html {
   height: 100%;
   width: 100%;
   position: fixed;
-  overflow-y: scroll 
+  overflow-y: scroll;
 }
 body {
   background: var(--secondary);
   overflow-x: hidden;
-  
 }
 .button {
   background: none;
@@ -209,7 +208,7 @@ h4 {
 }
 footer {
   padding: 30px 20px;
-  background-color: var(--secondary)
+  background-color: var(--secondary);
   background-image: url(assets/footer_image.png);
   background-size: 40%;
   background-repeat: no-repeat;
@@ -230,6 +229,10 @@ footer li {
 footer img {
   width: 20px;
 }
+
+/* .metcol {
+  width: 100px !important;
+} */
 /* small tablet styles */
 
 @media screen and (min-width: 620px) {
