@@ -33,6 +33,10 @@ body {
   background: var(--secondary);
   overflow-x: hidden;
 }
+
+.projectImages {
+  border-radius: 12px;
+}
 .button {
   background: none;
   border: 2px solid var(--primary);
