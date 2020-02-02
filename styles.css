@@ -21,6 +21,16 @@ li {
 }
 
 /* base styles  */
+/* .projects a {
+  border-bottom: 3px solid transparent;
+  padding-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+} */
+.projects a:hover {
+  /* border-bottom: 3px solid var(--primary); */
+  /* text-decoration: none; */
+  color: var(--primary);
+}
 .site-nav a:hover {
   color: white;
 }
