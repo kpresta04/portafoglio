@@ -237,7 +237,7 @@ footer li {
   margin: 0 6px;
 }
 footer img {
-  width: 20px;
+  width: 5em;
 }
 
 .metcol {
@@ -397,7 +397,7 @@ footer img {
     grid-column: 6/9;
   }
   footer img {
-    width: 30px;
+    width: 4em;
   }
 }
 
