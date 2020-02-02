@@ -21,6 +21,9 @@ li {
 }
 
 /* base styles  */
+#canDo {
+  margin-top: 5em;
+}
 #bannerPhoto {
   border-radius: 50%;
 }
