@@ -1,0 +1,99 @@
+/* css variables */
+:root {
+  --primary: #b2b0d4;
+  --secondary: #0d0116;
+}
+
+/* reset  */
+
+li {
+  list-style-type: none;
+}
+#bannerPhoto {
+  border-radius: 50%;
+}
+body,
+html {
+  font-family: "Roboto Mono", monospace;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: var(--secondary);
+}
+
+img {
+  height: 200px;
+  width: 150px;
+  border-radius: 12px;
+}
+
+button {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  font-size: 1em;
+}
+
+button:hover {
+  color: #222;
+  background: var(--primary);
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893d8;
+  color: #f2f2f2;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #dddbff;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+p,
+a,
+li {
+  color: #9893d8;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+h1,
+h3 {
+  font-size: 1.2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.1em;
+}
+.leading {
+  font-size: 1.1em;
+}
+#skills {
+  /* padding: 30px 20px; */
+  background: #07083e;
+  background-color: var(--secondary);
+}
+#skills h3 {
+  text-align: center;
+}
+
+#skills li {
+  background: rgba(0, 0, 0, 0.2);
+}
