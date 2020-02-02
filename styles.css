@@ -33,6 +33,7 @@ li {
 }
 .site-nav a:hover {
   color: white;
+  text-decoration: none;
 }
 .site-nav li {
   transition: all 0.3s ease-in-out;
