@@ -21,6 +21,9 @@ li {
 }
 
 /* base styles  */
+#bannerPhoto {
+  border-radius: 50%;
+}
 body,
 html {
   font-family: "Roboto Mono", monospace;
@@ -353,6 +356,7 @@ footer img {
   body {
     font-size: 20px;
   }
+
   .site-nav {
     padding: 0;
   }
