@@ -148,12 +148,12 @@ h4 {
   width: 200%;
 }
 #portfolio {
-  background: url(assets/square_bg.png);
+  /* background: url(assets/square_bg.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   padding: 30px 20px;
-  background-color: var(--secondary);
+  background-color: #12031f;
 }
 #portfolio h3 {
   margin-bottom: 0;
