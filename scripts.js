@@ -20,4 +20,6 @@ $(document).ready(function() {
   $("#dashImg").on("mouseout", function() {
     $(this).attr("src", "./assets/weatherdash400.png");
   });
+
+  const doc = document.querySelector;
 });
