@@ -156,6 +156,7 @@ h4 {
 }
 
 /* mobile styles */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -257,8 +258,8 @@ h4 {
   text-align: center;
 }
 #contact form {
-  width: 80%;
-  max-width: 400px;
+  width: 100%;
+  max-width: 500px;
   margin: 20px auto;
   text-align: center;
 }
