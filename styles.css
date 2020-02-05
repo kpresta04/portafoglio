@@ -26,7 +26,9 @@ li {
   padding-bottom: 5px;
   transition: all 0.3s ease-in-out;
 } */
-
+#footerRow a:hover {
+  color: var(--primary);
+}
 #planeImg {
   height: 1em;
 }
