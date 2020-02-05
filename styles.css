@@ -215,12 +215,15 @@ h4 {
   margin: 20px 0;
 }
 .projects a * {
-  margin: 0 20px;
-  max-width: 40%;
-  align-self: center;
+  margin: 0 auto;
+  /* max-width: 40%; */
+  /* align-self: center; */
 }
 .projects h4 {
   color: #9994f7;
+}
+.projects img {
+  max-height: 320px;
 }
 #skills {
   /* padding: 30px 20px; */
