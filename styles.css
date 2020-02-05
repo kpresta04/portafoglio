@@ -163,6 +163,14 @@ h4 {
 
 /* mobile styles */
 
+#socialUl {
+  /* padding-right: 1.5em; */
+  display: block;
+}
+#inImg {
+  margin-top: 0.5em;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -316,6 +324,12 @@ footer img {
 /* small tablet styles */
 
 @media screen and (min-width: 620px) {
+  #socialUl {
+    display: inline-flex;
+  }
+  #inImg {
+    margin-top: 0;
+  }
   .welcome-text {
     grid-column: 1/5;
   }
