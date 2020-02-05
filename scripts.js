@@ -21,5 +21,11 @@ $(document).ready(function() {
     $(this).attr("src", "./assets/weatherdash400.png");
   });
 
-  const doc = document.querySelector;
+  //send button
+  $("#sendBtn").on("mouseover", function() {
+    $("#planeImg").attr("src", "./assets/planeHover.jpg");
+  });
+  $("#sendBtn").on("mouseout", function() {
+    $("#planeImg").attr("src", "./assets/plane.jpg");
+  });
 });

@@ -26,6 +26,10 @@ li {
   padding-bottom: 5px;
   transition: all 0.3s ease-in-out;
 } */
+
+#planeImg {
+  height: 1em;
+}
 .projects a:hover {
   /* border-bottom: 3px solid var(--primary); */
   /* text-decoration: none; */
