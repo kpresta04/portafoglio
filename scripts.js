@@ -1,7 +1,7 @@
 $(document).ready(function() {
   //Beer Me mouseover
   $("#beerMeImg").on("mouseover", function() {
-    $(this).attr("src", "./assets/beerme.gif");
+    $(this).attr("src", "./assets/beerme2.gif");
   });
   $("#beerMeImg").on("mouseout", function() {
     $(this).attr("src", "./assets/beerme400.png");
@@ -15,7 +15,7 @@ $(document).ready(function() {
   });
   //Dash mouseover
   $("#dashImg").on("mouseover", function() {
-    $(this).attr("src", "./assets/dash.gif");
+    $(this).attr("src", "./assets/dash2.gif");
   });
   $("#dashImg").on("mouseout", function() {
     $(this).attr("src", "./assets/weatherdash400.png");
