@@ -376,7 +376,7 @@ footer img {
     font-size: 18px;
   }
   #beerMeImg {
-    margin-top: 4em;
+    margin-top: 3em;
   }
   .grid {
     max-width: 1060px;
@@ -446,6 +446,9 @@ footer img {
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
+  }
+  #beerMeImg {
+    margin-top: 4em;
   }
 
   .site-nav {
