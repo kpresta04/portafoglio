@@ -226,7 +226,7 @@ h4 {
 .projects a {
   grid-column: 1/9;
   display: flex;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 .projects a * {
   margin: 0 auto;
@@ -324,6 +324,9 @@ footer img {
 /* small tablet styles */
 
 @media screen and (min-width: 620px) {
+  .ghub {
+    margin-top: 0 !important;
+  }
   #socialUl {
     display: inline-flex;
   }
@@ -345,7 +348,7 @@ footer img {
   .projects a {
     grid-column: span 4;
     display: block;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
   .projects a:last-child {
     grid-column: 3/7;
@@ -371,6 +374,9 @@ footer img {
 @media screen and (min-width: 960px) {
   body {
     font-size: 18px;
+  }
+  #beerMeImg {
+    margin-top: 4em;
   }
   .grid {
     max-width: 1060px;
