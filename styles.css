@@ -214,7 +214,7 @@ h4 {
   background-repeat: no-repeat;
   background-position: bottom;
   padding: 30px 20px;
-  background-color: #17141c;
+  /* background-color: #17141c; */
   /* background-color: rgba(0, 0, 0, 0.2); */
 }
 #portfolio h3 {
@@ -376,9 +376,7 @@ footer img {
   body {
     font-size: 18px;
   }
-  #beerMeImg {
-    margin-top: 3em;
-  }
+
   .grid {
     max-width: 1060px;
     margin: 0 auto;
@@ -447,9 +445,6 @@ footer img {
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
-  }
-  #beerMeImg {
-    margin-top: 4em;
   }
 
   .site-nav {
