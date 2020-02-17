@@ -26,6 +26,15 @@ li {
   padding-bottom: 5px;
   transition: all 0.3s ease-in-out;
 } */
+.site-nav h1:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 0.5em;
+  border-bottom: 2px solid var(--primary); /* This creates the border. Replace black with whatever color you want. */
+  float: left;
+}
 #footerRow a:hover {
   color: var(--primary);
 }
@@ -87,6 +96,8 @@ li {
 }
 #bannerPhoto {
   border-radius: 50%;
+  opacity: 0.2;
+  z-index: -999;
 }
 body,
 html {
@@ -187,7 +198,7 @@ h4 {
   padding-bottom: 0.25em;
   padding-left: 0;
   /* margin-bottom: 1em; */
-  border-bottom: 2px solid var(--primary);
+  /* border-bottom: 2px solid var(--primary); */
   display: inline-block;
 }
 .site-nav ul {
@@ -388,9 +399,9 @@ footer img {
   .site-nav {
     padding: 0 20px;
   }
-  .site-nav h1 {
+  /* .site-nav h1 {
     grid-column: 1/3;
-  }
+  } */
   .site-nav ul {
     display: flex;
     grid-column: 6/9;
