@@ -94,11 +94,7 @@ li {
 #canDo {
   margin-top: 5em;
 }
-#bannerPhoto {
-  border-radius: 50%;
-  opacity: 0.2;
-  z-index: -999;
-}
+
 body,
 html {
   font-family: "Roboto Mono", monospace;
@@ -206,19 +202,36 @@ h4 {
 }
 #welcome {
   padding: 0 20px 20px 20px;
+  /* background-image: url("./assets/comp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3; */
+  position: relative;
+  overflow: hidden;
+}
+#welcome img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
 }
 .welcome-text {
   grid-column: 1/6;
+  position: relative;
+  z-index: 2;
 }
 .welcome-text a {
   margin: 20px 0;
 }
-.welcome-img {
+/* .welcome-img {
   grid-column: 6/9;
 }
 .welcome-img img {
   width: 200%;
-}
+} */
 #portfolio {
   /* background: url(assets/square_bg.png); */
   background-size: cover;
@@ -348,12 +361,12 @@ footer img {
   .welcome-text {
     grid-column: 1/5;
   }
-  .welcome-img {
+  /* .welcome-img {
     grid-column: 5/9;
   }
   .welcome-img img {
     width: 100%;
-  }
+  } */
   .projects {
     margin-top: 40px;
   }
