@@ -26,15 +26,15 @@ li {
   padding-bottom: 5px;
   transition: all 0.3s ease-in-out;
 } */
-.site-nav h1:after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 80%; /* Change this to whatever width you want. */
+/* .site-nav h1:after {
+  content: ""; 
+  display: block; 
+  margin: 0 auto; 
+  width: 80%; 
   padding-top: 0.5em;
-  border-bottom: 2px solid var(--primary); /* This creates the border. Replace black with whatever color you want. */
+  border-bottom: 2px solid var(--primary); 
   float: left;
-}
+} */
 #footerRow a:hover {
   color: var(--primary);
 }
@@ -97,7 +97,7 @@ li {
 
 body,
 html {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Nunito", sans-serif;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -149,7 +149,7 @@ h4 {
 p,
 a,
 li {
-  color: #9893d8;
+  /* color: #9893d8; */
   line-height: 1.4em;
   font-size: 1em;
 }
@@ -202,6 +202,9 @@ h4 {
 }
 #welcome {
   padding: 0 20px 20px 20px;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   /* background-image: url("./assets/comp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,6 +212,7 @@ h4 {
   opacity: 0.3; */
   position: relative;
   overflow: hidden;
+  margin-top: 1em;
 }
 #welcome img {
   position: absolute;
@@ -216,12 +220,14 @@ h4 {
   top: 0;
   width: 100%;
   height: auto;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .welcome-text {
-  grid-column: 1/6;
+  grid-column: 6/10;
   position: relative;
+  align-self: center;
   z-index: 2;
+  color: white;
 }
 .welcome-text a {
   margin: 20px 0;
@@ -358,9 +364,9 @@ footer img {
   #inImg {
     margin-top: 0;
   }
-  .welcome-text {
+  /* .welcome-text {
     grid-column: 1/5;
-  }
+  } */
   /* .welcome-img {
     grid-column: 5/9;
   }
@@ -424,10 +430,10 @@ footer img {
   .site-nav li {
     margin-left: 20px;
   }
-  .welcome-text {
+  /* .welcome-text {
     grid-column: 1/5;
     align-self: center;
-  }
+  } */
   #welcome {
     padding-bottom: 40px;
   }
@@ -469,6 +475,13 @@ footer img {
 @media screen and (min-width: 1200px) {
   body {
     font-size: 20px;
+  }
+  #welcomeTitle {
+    font-size: 1.5em;
+  }
+
+  #welcomeBenefit {
+    font-size: 5em;
   }
 
   .site-nav {
