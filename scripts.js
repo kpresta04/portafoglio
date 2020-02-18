@@ -25,6 +25,18 @@ window.onload = () => {
   //   $(this).attr("src", "./assets/weatherdash400.png");
   // });
 
+  let screenWidth = window.matchMedia("(min-width: 700px)");
+  function changeWelcomeImage(screenWidth) {
+    if (screenWidth.matches) {
+      // If media query matches
+      $("#bannerPhoto").src = "./assets/comp.jpg";
+    } else {
+      $("#bannerPhoto").src = "./assets/black-laptop.jpg";
+    }
+  }
+  changeWelcomeImage(screenWidth);
+  screenWidth.addListener(changeWelcomeImage);
+
   //send button
   $("#sendBtn").addEventListener("mouseover", function() {
     $("#planeImg").src = "./assets/planeHover.jpg";
