@@ -174,7 +174,7 @@ h4 {
 /* mobile styles */
 
 #welcomeBenefit {
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: bold;
   /* text-shadow: 1px 1px 3px #000000; */
   text-align: center;
@@ -370,6 +370,7 @@ footer img {
   /* margin-left: 0.5em; */
   margin-top: 1em;
 }
+
 /* small tablet styles */
 
 @media screen and (min-width: 620px) {
@@ -378,6 +379,9 @@ footer img {
   }
   #socialUl {
     display: inline-flex;
+  }
+  #welcomeBenefit {
+    font-size: 5em;
   }
   #inImg {
     margin-top: 0;
@@ -499,10 +503,6 @@ footer img {
   }
   #welcomeTitle {
     font-size: 1.5em;
-  }
-
-  #welcomeBenefit {
-    font-size: 5em;
   }
 
   .site-nav {
