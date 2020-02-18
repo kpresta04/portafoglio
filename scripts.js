@@ -38,10 +38,10 @@ window.onload = () => {
   // screenWidth.addListener(changeWelcomeImage);
 
   //send button
-  $("#sendBtn").addEventListener("mouseover", function() {
-    $("#planeImg").src = "./assets/planeHover.jpg";
-  });
-  $("#sendBtn").addEventListener("mouseout", function() {
-    $("#planeImg").src = "./assets/plane.jpg";
-  });
+  // $("#sendBtn").addEventListener("mouseover", function() {
+  //   $("#planeImg").src = "./assets/planeHover.jpg";
+  // });
+  // $("#sendBtn").addEventListener("mouseout", function() {
+  //   $("#planeImg").src = "./assets/plane.jpg";
+  // });
 };

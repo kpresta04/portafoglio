@@ -100,7 +100,7 @@ li {
 
 body,
 html {
-  font-family: "Nunito", sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -115,9 +115,9 @@ body {
   border-radius: 12px;
 }
 .button {
-  background: none;
+  background-color: white;
   border: 3px solid white;
-  color: white;
+  color: var(--secondary);
   padding: 6px 12px;
   border-radius: 20px;
   text-transform: uppercase;
@@ -127,8 +127,9 @@ body {
 }
 
 .button:hover {
-  color: #222;
-  background: var(--primary);
+  color: var(--secondary);
+
+  text-decoration: none;
 }
 
 input,
@@ -152,7 +153,7 @@ h4 {
 p,
 a,
 li {
-  /* color: #9893d8; */
+  color: var(--primary);
   line-height: 1.1em;
   font-size: 1em;
 }
@@ -175,6 +176,7 @@ h4 {
 
 #welcomeBenefit {
   font-size: 4em;
+
   font-weight: bold;
   /* text-shadow: 1px 1px 3px #000000; */
   text-align: center;
@@ -183,6 +185,7 @@ h4 {
   margin: 30px auto;
   display: block;
   max-width: 10em;
+  text-align: center;
 }
 
 #socialUl {
