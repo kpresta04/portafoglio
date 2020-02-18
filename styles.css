@@ -1,7 +1,7 @@
 /* css variables */
 :root {
   --primary: #b2b0d4;
-  --secondary: #0d0116;
+  --secondary: #100e16;
 }
 
 /* reset  */
@@ -26,6 +26,15 @@ li {
   padding-bottom: 5px;
   transition: all 0.3s ease-in-out;
 } */
+/* .site-nav h1:after {
+  content: ""; 
+  display: block; 
+  margin: 0 auto; 
+  width: 80%; 
+  padding-top: 0.5em;
+  border-bottom: 2px solid var(--primary); 
+  float: left;
+} */
 #footerRow a:hover {
   color: var(--primary);
 }
@@ -40,6 +49,9 @@ li {
 .site-nav a:hover {
   color: white;
   text-decoration: none;
+}
+.container-fluid {
+  padding: 0;
 }
 .site-nav h1 {
   /* transition: all 0.3s ease-in-out; */
@@ -85,12 +97,10 @@ li {
 #canDo {
   margin-top: 5em;
 }
-#bannerPhoto {
-  border-radius: 50%;
-}
+
 body,
 html {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Nunito", sans-serif;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -106,8 +116,8 @@ body {
 }
 .button {
   background: none;
-  border: 2px solid var(--primary);
-  color: var(--primary);
+  border: 3px solid white;
+  color: white;
   padding: 6px 12px;
   border-radius: 20px;
   text-transform: uppercase;
@@ -142,8 +152,8 @@ h4 {
 p,
 a,
 li {
-  color: #9893d8;
-  line-height: 1.4em;
+  /* color: #9893d8; */
+  line-height: 1.1em;
   font-size: 1em;
 }
 
@@ -163,6 +173,18 @@ h4 {
 
 /* mobile styles */
 
+#welcomeBenefit {
+  font-size: 4.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000000;
+  text-align: center;
+}
+#welcomeButton {
+  margin: 30px auto;
+  display: block;
+  max-width: 10em;
+}
+
 #socialUl {
   /* padding-right: 1.5em; */
   display: block;
@@ -179,7 +201,7 @@ h4 {
 }
 .site-nav {
   margin: 0 20px;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px;
 }
 .site-nav h1 {
   grid-column: 1/4;
@@ -187,7 +209,7 @@ h4 {
   padding-bottom: 0.25em;
   padding-left: 0;
   /* margin-bottom: 1em; */
-  border-bottom: 2px solid var(--primary);
+  /* border-bottom: 2px solid var(--primary); */
   display: inline-block;
 }
 .site-nav ul {
@@ -195,26 +217,53 @@ h4 {
 }
 #welcome {
   padding: 0 20px 20px 20px;
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  /* background-image: url("./assets/comp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3; */
+  position: relative;
+  overflow: hidden;
+  margin-top: 1em;
+}
+#welcome img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 .welcome-text {
-  grid-column: 1/6;
+  grid-column: 2;
+  grid-row: 3/6;
+  position: relative;
+  align-self: center;
+  z-index: 2;
+  color: white;
 }
 .welcome-text a {
   margin: 20px 0;
 }
-.welcome-img {
+/* .welcome-img {
   grid-column: 6/9;
 }
 .welcome-img img {
   width: 200%;
-}
+} */
 #portfolio {
   /* background: url(assets/square_bg.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   padding: 30px 20px;
-  background-color: #12031f;
+  /* background-color: #17141c; */
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 #portfolio h3 {
   margin-bottom: 0;
@@ -333,15 +382,15 @@ footer img {
   #inImg {
     margin-top: 0;
   }
-  .welcome-text {
+  /* .welcome-text {
     grid-column: 1/5;
-  }
-  .welcome-img {
+  } */
+  /* .welcome-img {
     grid-column: 5/9;
   }
   .welcome-img img {
     width: 100%;
-  }
+  } */
   .projects {
     margin-top: 40px;
   }
@@ -375,9 +424,7 @@ footer img {
   body {
     font-size: 18px;
   }
-  #beerMeImg {
-    margin-top: 3em;
-  }
+
   .grid {
     max-width: 1060px;
     margin: 0 auto;
@@ -389,9 +436,9 @@ footer img {
   .site-nav {
     padding: 0 20px;
   }
-  .site-nav h1 {
+  /* .site-nav h1 {
     grid-column: 1/3;
-  }
+  } */
   .site-nav ul {
     display: flex;
     grid-column: 6/9;
@@ -401,10 +448,10 @@ footer img {
   .site-nav li {
     margin-left: 20px;
   }
-  .welcome-text {
+  /* .welcome-text {
     grid-column: 1/5;
     align-self: center;
-  }
+  } */
   #welcome {
     padding-bottom: 40px;
   }
@@ -447,8 +494,12 @@ footer img {
   body {
     font-size: 20px;
   }
-  #beerMeImg {
-    margin-top: 4em;
+  #welcomeTitle {
+    font-size: 1.5em;
+  }
+
+  #welcomeBenefit {
+    font-size: 5em;
   }
 
   .site-nav {
