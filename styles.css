@@ -240,11 +240,11 @@ h4 {
   top: 0;
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .welcome-text {
   grid-column: 2;
-  grid-row: 3/6;
+  grid-row: 8;
   position: relative;
   align-self: center;
   z-index: 2;
@@ -492,6 +492,9 @@ footer img {
   footer {
     background-size: 20%;
     padding: 40px 20px;
+  }
+  .welcome-text {
+    grid-row: 5;
   }
 }
 
