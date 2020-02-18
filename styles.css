@@ -494,6 +494,9 @@ footer img {
   body {
     font-size: 20px;
   }
+  #bannerPhoto {
+    content: url("./assets/comp.jpg");
+  }
   #welcomeTitle {
     font-size: 1.5em;
   }
