@@ -1,6 +1,6 @@
 /* css variables */
 :root {
-  --primary: #b2b0d4;
+  --primary: white;
   --secondary: #100e16;
 }
 
@@ -136,7 +136,7 @@ textarea {
   background: rgba(255, 255, 255, 0.05);
   padding: 10px 16px;
   border-radius: 20px;
-  border: 2px solid #9893d8;
+  border: 2px solid var(--primary);
   color: #f2f2f2;
   font-size: 1em;
 }
