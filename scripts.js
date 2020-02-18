@@ -25,7 +25,7 @@ window.onload = () => {
   //   $(this).attr("src", "./assets/weatherdash400.png");
   // });
 
-  let screenWidth = window.matchMedia("(min-width: 700px)");
+  let screenWidth = window.matchMedia("(min-width: 1000px)");
   function changeWelcomeImage(screenWidth) {
     if (screenWidth.matches) {
       // If media query matches
