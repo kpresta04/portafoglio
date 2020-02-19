@@ -444,7 +444,7 @@ footer img {
 .metcol {
   background: rgba(0, 0, 0, 0.2);
   /* margin-left: 0.5em; */
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 
 /* small tablet styles */
@@ -674,9 +674,6 @@ footer img {
   }
   .heading-secondary {
     font-size: 2em;
-  }
-  .metcol {
-    margin-top: 0;
   }
 }
 
