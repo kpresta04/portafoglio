@@ -176,9 +176,27 @@ h4 {
 
 .heading-secondary {
   text-align: center;
-  grid-column: 2;
+  /* grid-column: 2; */
   font-size: 1.6em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
 }
+.heading-tertiary {
+  text-transform: uppercase;
+}
+.heading-tertiary:nth-of-type(2) {
+  margin-top: 2em;
+}
+#intro p {
+  line-height: 1.2em;
+}
+#intro {
+  display: block;
+  text-align: left;
+  padding-left: 1em;
+  /* grid-template-columns: 1fr; */
+}
+
 .skill-card {
   display: grid;
   height: 40vh;
@@ -284,6 +302,7 @@ h4 {
   position: relative;
   overflow: hidden;
   margin-top: 1em;
+  margin-bottom: -50px;
 }
 #welcome img {
   position: absolute;
@@ -449,15 +468,10 @@ footer img {
   #inImg {
     margin-top: 0;
   }
-  /* .welcome-text {
-    grid-column: 1/5;
-  } */
-  /* .welcome-img {
-    grid-column: 5/9;
+
+  #welcome {
+    margin-bottom: 3em;
   }
-  .welcome-img img {
-    width: 100%;
-  } */
   .projects {
     margin-top: 40px;
   }
@@ -526,7 +540,7 @@ footer img {
     align-self: center;
   } */
   #welcome {
-    padding-bottom: 40px;
+    margin-bottom: 0;
   }
   .projects a:nth-child(1) {
     grid-column: 2/4;
