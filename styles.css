@@ -662,6 +662,7 @@ footer img {
   }
   #intro {
     grid-template-columns: 2fr 1fr 2fr;
+    padding-left: 0;
   }
   #intro p {
     margin-top: 1em;
@@ -673,6 +674,9 @@ footer img {
   }
   .heading-secondary {
     font-size: 2em;
+  }
+  .metcol {
+    margin-top: 0;
   }
 }
 
