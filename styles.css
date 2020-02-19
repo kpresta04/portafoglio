@@ -173,6 +173,12 @@ h4 {
 }
 
 /* mobile styles */
+
+.heading-secondary {
+  text-align: center;
+  grid-column: 2;
+  font-size: 1.6em;
+}
 .skill-card {
   display: grid;
   height: 40vh;
@@ -570,8 +576,10 @@ footer img {
   skill-card {
     height: 50vh;
   }
+
   #about {
     grid-template-columns: repeat(8, 1fr);
+
     gap: 4em;
   }
   .skill-card:nth-of-type(1) {
