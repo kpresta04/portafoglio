@@ -173,6 +173,10 @@ h4 {
 }
 
 /* mobile styles */
+#mobileJPGs .row {
+  margin-left: 0;
+  margin-right: 0;
+}
 #tabletJPGs {
   display: none;
 }
