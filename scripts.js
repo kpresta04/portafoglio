@@ -1,8 +1,7 @@
 window.onload = () => {
-  const $ = function(selector) {
-    return document.querySelector(selector);
-  };
-
+  // const $ = function(selector) {
+  //   return document.querySelector(selector);
+  // };
   //Beer Me mouseover
   // $("#beerMeImg").on("mouseover", function() {
   //   $(this).attr("src", "./assets/beerme2.gif");
@@ -24,7 +23,6 @@ window.onload = () => {
   // $("#dashImg").on("mouseout", function() {
   //   $(this).attr("src", "./assets/weatherdash400.png");
   // });
-
   // let screenWidth = window.matchMedia("(min-width: 1000px)");
   // function changeWelcomeImage(screenWidth) {
   //   if (screenWidth.matches) {
@@ -36,7 +34,6 @@ window.onload = () => {
   // }
   // changeWelcomeImage(screenWidth);
   // screenWidth.addListener(changeWelcomeImage);
-
   //send button
   // $("#sendBtn").addEventListener("mouseover", function() {
   //   $("#planeImg").src = "./assets/planeHover.jpg";
@@ -44,4 +41,21 @@ window.onload = () => {
   // $("#sendBtn").addEventListener("mouseout", function() {
   //   $("#planeImg").src = "./assets/plane.jpg";
   // });
+  function scrollFunc() {
+    if (
+      document.body.scrollTop > 1350 ||
+      document.documentElement.scrollTop > 1350
+    ) {
+      $(".navFooter").show();
+    } else {
+      $(".navFooter").hide();
+    }
+  }
+  document.body.addEventListener("scroll", scrollFunc);
+
+  // function showFooter() {
+  //   $(".navFooter").show();
+  // }
+
+  // setTimeout(showFooter, 3000);
 };
