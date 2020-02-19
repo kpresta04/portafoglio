@@ -173,6 +173,33 @@ h4 {
 }
 
 /* mobile styles */
+
+.heading-secondary {
+  text-align: center;
+  /* grid-column: 2; */
+  font-size: 1.6em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.heading-tertiary {
+  text-transform: uppercase;
+  grid-column: 2;
+}
+.heading-tertiary:nth-of-type(2) {
+  margin-top: 2em;
+}
+#intro p {
+  line-height: 1.2em;
+  grid-column: 2;
+}
+#intro {
+  display: grid;
+  text-align: left;
+  padding-left: 1em;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
 .skill-card {
   display: grid;
   height: 40vh;
@@ -278,6 +305,7 @@ h4 {
   position: relative;
   overflow: hidden;
   margin-top: 1em;
+  margin-bottom: -50px;
 }
 #welcome img {
   position: absolute;
@@ -443,15 +471,10 @@ footer img {
   #inImg {
     margin-top: 0;
   }
-  /* .welcome-text {
-    grid-column: 1/5;
-  } */
-  /* .welcome-img {
-    grid-column: 5/9;
+
+  #welcome {
+    margin-bottom: 3em;
   }
-  .welcome-img img {
-    width: 100%;
-  } */
   .projects {
     margin-top: 40px;
   }
@@ -520,7 +543,7 @@ footer img {
     align-self: center;
   } */
   #welcome {
-    padding-bottom: 40px;
+    margin-bottom: 4em;
   }
   .projects a:nth-child(1) {
     grid-column: 2/4;
@@ -570,8 +593,10 @@ footer img {
   skill-card {
     height: 50vh;
   }
+
   #about {
     grid-template-columns: repeat(8, 1fr);
+
     gap: 4em;
   }
   .skill-card:nth-of-type(1) {
@@ -634,6 +659,20 @@ footer img {
   }
   footer img {
     width: 4em;
+  }
+  #intro {
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+  #intro p {
+    margin-top: 1em;
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  .heading-tertiary {
+    font-size: 1.5em;
+  }
+  .heading-secondary {
+    font-size: 2em;
   }
 }
 
