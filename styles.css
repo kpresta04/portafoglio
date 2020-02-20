@@ -179,14 +179,15 @@ h4 {
 /* mobile styles */
 .navFooter {
   position: fixed;
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: var(--primary);
   color: var(--secondary);
   text-align: center;
-  height: 7vh;
+  height: 10vh;
 }
 .navFooter p {
   color: var(--secondary);
@@ -306,6 +307,8 @@ h4 {
 .site-nav h1 {
   grid-column: 1/4;
   grid-row: 1;
+  font-weight: bold;
+  letter-spacing: 4px;
   padding-bottom: 0.25em;
   padding-left: 0;
   /* margin-bottom: 1em; */
