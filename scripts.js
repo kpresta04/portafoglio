@@ -1,47 +1,30 @@
 window.onload = () => {
-  const $ = function(selector) {
-    return document.querySelector(selector);
-  };
+  // console.log(document.body.scrollHeight);
 
-  //Beer Me mouseover
-  // $("#beerMeImg").on("mouseover", function() {
-  //   $(this).attr("src", "./assets/beerme2.gif");
-  // });
-  // $("#beerMeImg").on("mouseout", function() {
-  //   $(this).attr("src", "./assets/beerme400.png");
-  // });
-  // //JS Code Quiz Mouseover
-  // $("#jsImg").on("mouseover", function() {
-  //   $(this).attr("src", "./assets/codeqiz2.gif");
-  // });
-  // $("#jsImg").on("mouseout", function() {
-  //   $(this).attr("src", "./assets/codingquiz500.png");
-  // });
-  // //Dash mouseover
-  // $("#dashImg").on("mouseover", function() {
-  //   $(this).attr("src", "./assets/dash2.gif");
-  // });
-  // $("#dashImg").on("mouseout", function() {
-  //   $(this).attr("src", "./assets/weatherdash400.png");
-  // });
+  function scrollFunc(e) {
+    // console.log(e.target.scrollTop);
+    // if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+    //   $(".navFooter").hide();
+    // }
+    if (screen.width < 1200) {
+      if (
+        e.target.scrollTop >
+        document.body.scrollHeight - document.body.clientHeight - 100
+      ) {
+        $(".navFooter").hide();
+      } else {
+        $(".navFooter").show();
+      }
+    }
+  }
 
-  // let screenWidth = window.matchMedia("(min-width: 1000px)");
-  // function changeWelcomeImage(screenWidth) {
-  //   if (screenWidth.matches) {
-  //     // If media query matches
-  //     $("#bannerPhoto").src = "./assets/comp.jpg";
-  //   } else {
-  //     $("#bannerPhoto").src = "./assets/black-laptop.jpg";
-  //   }
-  // }
-  // changeWelcomeImage(screenWidth);
-  // screenWidth.addListener(changeWelcomeImage);
-
-  //send button
-  // $("#sendBtn").addEventListener("mouseover", function() {
-  //   $("#planeImg").src = "./assets/planeHover.jpg";
-  // });
-  // $("#sendBtn").addEventListener("mouseout", function() {
-  //   $("#planeImg").src = "./assets/plane.jpg";
-  // });
+  document.body.addEventListener("scroll", scrollFunc);
+  function getDocHeight() {
+    const D = document;
+    return Math.max(
+      D.body.scrollHeight,
+      D.body.offsetHeight,
+      D.body.clientHeight
+    );
+  }
 };
