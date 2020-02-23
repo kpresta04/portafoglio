@@ -188,9 +188,12 @@ footer .social {
 footer li {
   display: grid;
 }
+#footerRow a {
+  text-transform: uppercase;
+}
 #footerRow {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 1fr;
 }
 #footerRow a:nth-of-type(1) {
   display: grid;
@@ -200,6 +203,11 @@ footer li {
   display: grid;
 
   grid-column: 3;
+}
+#footerRow a:nth-of-type(3) {
+  display: grid;
+
+  grid-column: 4;
 }
 
 .navFooter h4 {
@@ -305,6 +313,8 @@ footer li {
 
 #welcomeBenefit {
   font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 
   font-weight: bold;
   /* text-shadow: 1px 1px 3px #000000; */
@@ -573,6 +583,9 @@ footer li {
 /* large tablets and laptops */
 
 @media screen and (min-width: 960px) {
+  #footerRow {
+    grid-template-columns: 1.5fr repeat(3, 1fr) 1.5fr;
+  }
   .navFooter {
     height: 7vh;
   }
@@ -688,7 +701,7 @@ footer li {
     font-size: 1.2em;
   }
   #footerRow {
-    grid-template-columns: 3fr 1fr 1fr 3fr;
+    grid-template-columns: 8fr 1fr 1fr 1fr 8fr;
   }
 
   .navFooter {
