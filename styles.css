@@ -701,7 +701,7 @@ footer li {
     font-size: 1.2em;
   }
   #footerRow {
-    grid-template-columns: 8fr 1fr 1fr 1fr 8fr;
+    grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
   }
 
   .navFooter {
@@ -806,4 +806,10 @@ footer li {
 .skills-img {
   max-height: 134px;
   max-width: 164px;
+}
+
+@media screen and (min-width: 2400px) {
+  #footerRow {
+    grid-template-columns: 8fr 1fr 1fr 1fr 8fr;
+  }
 }
