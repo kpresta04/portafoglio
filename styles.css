@@ -573,9 +573,6 @@ footer li {
 /* large tablets and laptops */
 
 @media screen and (min-width: 960px) {
-  #footerRow a {
-    font-size: 1.5em;
-  }
   .navFooter {
     height: 7vh;
   }
