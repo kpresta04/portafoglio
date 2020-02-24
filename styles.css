@@ -372,9 +372,11 @@ footer li {
   /* padding: 0 20px 20px 20px; */
   height: 90vh;
   width: 100vw;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  /* display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); */
   /* background-image: url("./assets/comp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -394,9 +396,12 @@ footer li {
   opacity: 0.7;
 }
 .welcome-text {
-  grid-column: 2;
-  grid-row: 8;
-  position: relative;
+  /* grid-column: 2;
+  grid-row: 8; */
+
+  /* vertical-align: middle; */
+  /* text-align: center; */
+  /* position: relative; */
   align-self: center;
   z-index: 2;
   color: white;
