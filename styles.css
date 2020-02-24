@@ -261,8 +261,9 @@ footer li {
 #intro {
   display: grid;
   text-align: left;
-  padding-left: 1em;
+  /* padding-left: 1em; */
   grid-template-columns: 1fr 3fr 1fr;
+  margin-bottom: 7em;
 }
 
 .skill-card {
@@ -288,7 +289,7 @@ footer li {
 }
 
 #about {
-  margin: 6em 0;
+  margin: 3em 0;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -311,8 +312,15 @@ footer li {
   text-transform: uppercase;
 }
 
+#welcomeSubtitle {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5em;
+}
+
 #welcomeBenefit {
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
   letter-spacing: 4px;
 
@@ -321,10 +329,11 @@ footer li {
   text-align: center;
 }
 #welcomeButton {
-  margin: 30px auto;
+  margin: 35px auto;
   display: block;
   max-width: 10em;
   text-align: center;
+  font-size: 1.2em;
 }
 
 /* #socialUl { */
@@ -363,9 +372,11 @@ footer li {
   /* padding: 0 20px 20px 20px; */
   height: 90vh;
   width: 100vw;
-  display: grid;
+  display: flex;
+  justify-content: center;
+  /* display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); */
   /* background-image: url("./assets/comp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -385,9 +396,12 @@ footer li {
   opacity: 0.7;
 }
 .welcome-text {
-  grid-column: 2;
-  grid-row: 8;
-  position: relative;
+  /* grid-column: 2;
+  grid-row: 8; */
+
+  /* vertical-align: middle; */
+  /* text-align: center; */
+  /* position: relative; */
   align-self: center;
   z-index: 2;
   color: white;
@@ -541,7 +555,7 @@ footer li {
     display: inline-flex;
   }
   #welcomeBenefit {
-    font-size: 5em;
+    font-size: 4em;
   }
   #inImg {
     margin-top: 0;
@@ -691,6 +705,14 @@ footer li {
   }
   .welcome-text {
     grid-row: 5;
+  }
+  #welcomeButton {
+    padding: 15px;
+    font-size: 1.5em;
+    margin-top: 3em;
+  }
+  #welcomeSubtitle {
+    font-size: 2.2em;
   }
 }
 
